@@ -23,3 +23,8 @@ class Solution(object):
                 if len(res) == k:
                     return res
 
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [1,2,2,1,1,3]
+    k = 2
+    print("Output is : ", sol.topKFrequent(nums,k))
