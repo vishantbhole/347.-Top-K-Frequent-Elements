@@ -15,3 +15,16 @@ class Solution(object):
         for n,c in count.items():
             freq[c].append(n)
 
+
+        res = []
+        for i in range(len(freq) - 1, 0, -1):
+            for n in freq[i]:
+                res.append(n)
+                if len(res) == k:
+                    return res
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [1,2,2,1,1,3]
+    k = 2
+    print("Output is : ", sol.topKFrequent(nums,k))
