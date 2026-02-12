@@ -5,4 +5,6 @@ from typing import List
 
 class Solution(object):
       def topKFrequent2(self, nums: List[int], k: int) -> List[int]:
+            counter = Counter(nums)
+            heap = []
 
