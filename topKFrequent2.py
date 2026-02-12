@@ -15,3 +15,7 @@ class Solution(object):
 
             return [h[1] for h in heap]
 
+# Time: O(n log k), Space: O(k)
+
+if __name__ == "__main__":
+    sol = Solution()
